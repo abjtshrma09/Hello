@@ -33,6 +33,22 @@
       from { transform: translateY(0); opacity: 1; }
       to { transform: translateY(-100vh); opacity: 0; }
     }
+    .photo-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin: 40px auto;
+  flex-wrap: nowrap;
+}
+
+.photo-row img {
+  width: 22%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 16px;
+}
+
   </style>
 </head>
 <body>
@@ -70,11 +86,11 @@ Ntra kei bnara khau which u really love but rarely eat. Hai?
 
 Byeeeeee ❤️
 </p>
-<div class="fade" style="margin-top:40px; display:flex; flex-direction:column; align-items:center;">
-  <img src="photo1.jpg" style="width:90%; max-width:320px; height:auto; border-radius:18px; margin:14px;">
-  <img src="photo2.jpg" style="width:90%; max-width:320px; height:auto; border-radius:18px; margin:14px;">
-  <img src="photo3.jpg" style="width:90%; max-width:320px; height:auto; border-radius:18px; margin:14px;">
-  <img src="photo4.jpg" style="width:90%; max-width:320px; height:auto; border-radius:18px; margin:14px;">
+<div class="fade photo-row">
+  <img src="photo1.jpg">
+  <img src="photo2.jpg">
+  <img src="photo3.jpg">
+  <img src="photo4.jpg">
 </div>
 
 <script>
