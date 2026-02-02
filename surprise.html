@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>❤️</title>
+  <style>
+    body {
+      background: #ffe6f0;
+      text-align: center;
+      font-family: Segoe Script, cursive;
+      padding-top: 80px;
+      overflow: hidden;
+    }
+
+    h1 {
+      color: #e6004c;
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 20px;
+      margin: 30px;
+      color: #990033;
+    }
+
+    .heart {
+      position: fixed;
+      bottom: 0;
+      font-size: 22px;
+      animation: floatUp 6s infinite;
+    }
+
+    @keyframes floatUp {
+      from { transform: translateY(0); opacity: 1; }
+      to { transform: translateY(-100vh); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<h1>Happy Birthday Rupa ❤️</h1>
+
+<p>
+You are the most beautiful part of my life.  
+Every smile of yours means everything to me.  
+I am so grateful to have you.  
+Always yours 💕
+</p>
+
+<script>
+  for (let i = 0; i < 20; i++) {
+    let heart = document.createElement("div");
+    heart.innerHTML = "❤️";
+    heart.className = "heart";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.animationDuration = (Math.random() * 3 + 4) + "s";
+    document.body.appendChild(heart);
+  }
+</script>
+
+</body>
+</html>
