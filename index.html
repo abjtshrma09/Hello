@@ -25,22 +25,5 @@
 
 <button onclick="goNext()">Click here beautiful 💖</button>
 
-<audio id="bgMusic">
-  <source src="music.mp3" type="audio/mpeg">
-</audio>
-
-<script>
-  function goNext() {
-    const music = document.getElementById("bgMusic");
-    if (music) {
-      music.volume = 0.4;
-      music.play();
-    }
-    setTimeout(() => {
-      window.location.href = "surprise.html";
-    }, 400);
-  }
-</script>
-
 </body>
   </html>
