@@ -71,7 +71,9 @@
 </audio>
 
 <h1>Happy Birthday Rupa ❤️</h1>
-
+<p id="playMusic" style="cursor:pointer; font-size:16px; color:#cc3366;">
+❤️ Tap here to play music ❤️
+</p>
 <p>
 Hi.  
 First of all, sorry for hurting u on this day.  
@@ -111,6 +113,14 @@ Byeeeeee ❤️
 </div>
 
 <script>
+  const playText = document.getElementById("playMusic");
+  const music = document.getElementById("bgMusic");
+
+  playText.addEventListener("click", function () {
+    music.volume = 0.4;
+    music.play();
+    playText.style.display = "none";
+  });
 
   for (let i = 0; i < 20; i++) {
     let heart = document.createElement("div");
